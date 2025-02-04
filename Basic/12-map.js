@@ -24,23 +24,23 @@ console.log(myMap)
 // Métodos y propiedades
 
 // set
-
+// Si la clave no existe añade un nuevo valor, si la clave existe lo actualiza.
 myMap.set("alias", "mouredev")
 myMap.set("name", "Brais Moure")
 
 console.log(myMap)
 
-// get
+// get = Recupera el valor.
 
 console.log(myMap.get("name"))
 console.log(myMap.get("surname"))
 
-// has
+// has = Comprobar si una clave existe.
 
 console.log(myMap.has("surname"))
 console.log(myMap.has("age"))
 
-// delete
+// delete = eliminar por claves
 
 myMap.delete("email")
 
