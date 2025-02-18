@@ -64,8 +64,43 @@ let nuevoArray = stringMayus(Arrayanimals);
 console.log(nuevoArray);
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
+function numeroPrimo(num){
+   let esPrimo = true;
+   for (let i = 2; i < num; i++){
+
+    if (num % i === 0){
+        esPrimo = false;
+        break;
+    }
+
+   }
+
+   return esPrimo;
+}
+
+let answer = numeroPrimo(29);
+console.log(answer);
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
+
+let array1 = [1, 2, 3, 4, 5, 6, 7, 8];
+let array2 = [2, 4, 6, 20, 8, 10, 15, 22];
+
+function newArrayElement(lista1, lista2) {
+    let newElemets = [];
+    for (let value of lista1){
+        // verifico si la el array2 incluye valores del 1.
+        if (lista2.includes(value)){
+            if (!newElemets.includes(value)){
+                newElemets.push(value);
+            }
+        }
+    }
+    return newElemets;
+}
+console.log(newArrayElement(array1, array2));
+
+
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
