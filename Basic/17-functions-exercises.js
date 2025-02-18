@@ -91,9 +91,7 @@ function newArrayElement(lista1, lista2) {
     for (let value of lista1){
         // verifico si la el array2 incluye valores del 1.
         if (lista2.includes(value)){
-            if (!newElemets.includes(value)){
-                newElemets.push(value);
-            }
+            newElemets.push(value);
         }
     }
     return newElemets;
